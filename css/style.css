@@ -1,0 +1,976 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+.collapse {
+  justify-content: center; }
+
+ul {
+  list-style: none; }
+
+a:hover {
+  text-decoration: none; }
+
+.card {
+  border: none; }
+
+/*VARIAVEIS
+font-family: 'Baloo Tamma 2', cursive;
+cinza que gostei #f2f2f2;
+
+#008cff  azul bolinhas dos icones
+#d00000 vermelho
+#02182b  preto
+#448fa3 azul meio claro
+#bfe0f7 azul claro
+#f0eef2 cinza claro
+*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Baloo Tamma 2', cursive;
+  text-align: center;
+  color: #02182b;} 
+h2{font-size: 40px;}
+h3{font-size: 35px;} 
+h4{font-size: 30px;} 
+h5{font-size: 25px;}
+h6{font-size: 20px;}
+
+.h3_titulo:after {
+  content: '';
+  display: block;
+  width: 200px;
+  height: 3px;
+  background: #d00000;
+  margin: 0 auto; }
+
+.h3_titulo{
+  margin: 70px 0 20px 0;
+}
+p, a, button {
+  font-family: 'Baloo Tamma 2', cursive;
+  color: #02182b; }
+
+/*HEADER*/
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2000; }
+  .titulo{
+    text-align: center;
+  }
+
+header {
+  background: #bfe0f7; }
+  header .btn {
+    background: #008cff !important;
+    color: #fff;
+    padding-bottom: 0; }
+  header .logo-img {
+    display: flex;
+    padding: 10px 0;
+    align-items: center; }
+
+
+    header .form{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+header .logo .coluna-busca{
+  display: flex;
+
+  justify-content: flex-end;
+  align-items: center;
+}
+    /*
+  header .coluna-busca .linha-telefone {
+    display: flex;
+    padding-right: 15px; }
+    
+    header .coluna-busca .linha-telefone .icone-telefone {
+      border-radius: 100%;
+      background: #008cff;
+      width: 70px;
+      height: 70px;
+      padding-top: 6px; }
+      
+      header .coluna-busca .linha-telefone .icone-telefone .icon-phone-outline {
+        font-size: 37px;
+        padding-left: 9px; }
+
+    header .coluna-busca .linha-telefone .numero-telefone {
+      padding-right: 36px; }
+*/
+
+.card .card-body{
+  padding: 0!important;
+}
+.card h4{
+  margin: 0 !important;
+  padding: 10px;
+}
+
+.conteudo-phone{
+  text-align: right!important;
+}
+.conteudo-phone .icon-phone-outline,
+.conteudo-phone .fa-whatsapp{
+  color: #000;
+}
+.conteudo-phone .icon-phone-outline::before{
+  margin: 0;
+}
+.conteudo-phone span{
+  color: #000;
+}
+
+
+
+
+.menu-produtos ul {
+  margin-bottom: 0; }
+  .menu-produtos ul li {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px; }
+    .menu-produtos ul li a {
+      color: #FFF;
+      text-transform: uppercase; }
+      .menu-produtos ul li a:hover {
+        font-size: 15px; }
+
+.menu-produtos {
+  justify-content: center;
+  display: flex;
+  align-items: center; }
+  .menu-produtos .navbar {
+    background: none;
+    padding: 0;
+    margin: 0; }
+    .menu-produtos .navbar #li-brinquedao {
+      background: GREEN; }
+    .menu-produtos .navbar #li-eletronicos {
+      background: BLUE; }
+    .menu-produtos .navbar #li-kidsplay {
+      background: RED; }
+
+.navbar {
+  background: #02182b !important;
+  z-index: 1; }
+
+.navbar-light .navbar-brand {
+  color: #FFF !important;
+  padding-bottom: 0;
+  position: relative;
+  display: block;
+  color: #FFF !important;
+  text-transform: uppercase !important;
+  transition: 0.5s; }
+  .navbar-light .navbar-brand:hover {
+    color: #95a5a6; }
+  .navbar-light .navbar-brand::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    background: #d00000;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right; }
+
+.navbar-light .navbar-brand:hover::after {
+  transform: scaleX(1);
+  transform-origin: left; }
+
+.menu ul li a {
+  position: relative;
+  display: block;
+  color: #FFF !important;
+  text-transform: uppercase;
+  padding: 0;
+  transition: 0.5s; }
+  .menu ul li a::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    background: #d00000;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right; }
+
+.menu ul li a:hover {
+  color: #95a5a6; }
+
+.menu ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left; }
+
+/*BODY*/
+/*/////////NOSSOS PRODUTOS*/
+body {
+  background: #f2f2f2; }
+/**************************nossos produtos*/
+.nossos-produtos {
+  background: #f0eef2;
+  padding: 50px 0;  }
+  .nossos-produtos .card {
+    background: #fff;
+    padding: 10px;
+    border: none; }
+    .nossos-produtos .card img {
+      height: 317px; }
+    .nossos-produtos .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 2px 10px rgba(255, 255, 255, 0);
+      transition: 0.7s; }
+.nossos-produtos .card-group .card .card-title{
+  margin-bottom: 0 !important;
+  padding: 20px 10px !important;
+}
+.nossos-produtos .card-item .card .titulo{
+  height: 120px;
+  justify-content: center;
+  display: grid;
+  align-items: center;
+}
+.nossos-produtos .card-group .card .card-text{
+  padding: 10px 0 0 0;
+}
+/*************************fazemos*/
+.fazemos{
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  z-index: 1;
+}
+.fazemos h2{
+  background: rgba(43,34,34,0.3);
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+/*/////////areas atendidas*/
+.areas-atendidas {
+  padding-top: 200px;
+  background: #d4d1d6;
+  padding-bottom: 150px; }
+  .areas-atendidas .card {
+    margin-right: 10px; }
+    .areas-atendidas .card:hover {
+      transform: scale(1.01);
+      z-index: 1;
+      box-shadow: 0 5px 20px black;
+      transition: 0.7s; }
+
+.areas-atendidas .card-group {
+  padding-top: 15px; }
+  .areas-atendidas .card-group .card {
+    background: #f2f2f2; }
+    .areas-atendidas .card-group .card h4 {
+      padding-top: 0; }
+    .areas-atendidas .card-group .card #card-1 {
+      background: #008cff; }
+    .areas-atendidas .card-group .card #card-2 {
+      background: #d00000; }
+    .areas-atendidas .card-group .card #card-3 {
+      background: #008cff; }
+    .areas-atendidas .card-group .card #card-4 {
+      background: #d00000; }
+    .areas-atendidas .card-group .card .card-body {
+      justify-content: center;
+      display: grid;
+      align-items: center;
+      align-content: center;
+      height: 177px;
+      background: #fff; }
+      .areas-atendidas .card-group .card .card-body p{
+        color: #fff;
+      }
+      .areas-atendidas .card-group .card .card-body img {
+        height: 160px; }
+.nossos-produtos .card-group .card-item{
+  margin-bottom: -120px;
+}
+.carousel .carousel-inner .carousel-item img {
+  height: 600px;
+  object-fit: cover;
+  width: 1140px; }
+
+/*VIDEO
+.video {
+  position: relative;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden; }
+
+.video video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%); }
+
+.video .container {
+  position: relative;
+  z-index: 2; }
+
+.video .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1; }
+*/
+
+/*AREAS ATENDIDAS*/
+/*FOOTER*/
+header .numero-telefone h5.cent-atendimento, header .numero-telefone h5.central-telefone, footer .numero-telefone h5.cent-atendimento, footer .numero-telefone h5.central-telefone {
+  font-family: 'Anton', sans-serif; }
+header .numero-telefone h5.num-tele, footer .numero-telefone h5.num-tele {
+  font-size: 30px;
+  font-family: 'Anton', sans-serif;
+  color: #d00000; }
+
+footer .numero-telefone {
+  align-items: right;
+  padding-left: 36px;
+  padding-bottom: 10px; }
+
+footer {
+  background: #bfe0f7; }
+  footer .contato {
+    padding: 10px; }
+    /*
+    footer .contato h1 {
+      margin-top: -5px; }
+      */
+    footer .contato .icone-telefone {
+      align-items: left;
+      border-radius: 100%;
+      background: #008cff;
+      width: 70px;
+      height: 70px;
+      padding-top: 6px; }
+      footer .contato .icone-telefone .icon-phone-outline {
+        font-size: 37px;
+        padding-left: 9px; }
+    footer .contato .row {
+      margin: 0; }
+footer .institucional .titulo{
+  text-align: center;
+}
+footer .institucional input#email{
+  width: 300px;
+}
+footer .institucional p{
+  margin: 0!important;
+}
+footer .institucional input{
+  border: none;
+}
+footer .institucional .newsletter{
+  background: #fff;
+  padding: 20px 0;
+}
+footer .institucional input#enviar{
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+}
+/*
+footer .institucional .navbar {
+  background: #bfe0f7 !important; }
+
+footer .institucional .menu-esquerdo, .menu-direito {
+  background: #bfe0f7 !important;
+  padding-left: 20px; }
+  */
+footer .midias-sociais{
+  padding-top: 30px !important;
+}
+footer .midias-sociais .titulo h4{
+  text-align: start!important;
+}
+footer .midias-sociais li {
+  display: inline-block;
+  background: #008cff;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%; }
+  footer .midias-sociais li i {
+    display: flex;
+    font-size: 25px;
+    padding-top: 18px;
+    padding-left: 12px; }
+
+footer .float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 14px;
+  right: 23px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100; }
+  footer .float .my-float {
+    margin-top: 16px; }
+    footer .float .my-float:hover {
+      color: red;
+      transition: 1s; }
+
+.icon-location-outline::before, .icon-mail-alt::before, .icon-clock::before {
+  color: #008cff; }
+
+.icon-youtube::before, .icon-facebook::before {
+  color: #f2f2f2; }
+  .icon-instagram{
+    color: #fff;
+  }
+
+.contato .desc-email, .contato .desc-h-atendimento, .contato .desc-endereco {
+  display: flex;
+  align-items: center; }
+  .contato .desc-email p, .contato .desc-h-atendimento p, .contato .desc-endereco p {
+    margin-bottom: 0;
+    padding-top: 7px; }
+.contato .icon-location-outline, .contato .icon-clock, .contato .icon-mail-alt {
+  font-size: 25px; }
+.contato .linha-email, .contato .horario-atendimento {
+  margin-bottom: -15px !important; }
+.contato .linha-email, .contato .horario-atendimento, .contato .linha-endereco {
+  padding-top: 5px;
+  padding-bottom: 5px; }
+  .contato .linha-endereco .icon-location-outline{
+    float: left;
+  }
+  .contato .linha-endereco{
+    display: inline;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .contato .linha-endereco p{
+    margin: 0;
+  }
+
+
+
+
+
+/*PAGINAS*/
+/*CATEGORIA*/
+/*****************CAT-BRIQUEDAO*/
+.brinquedao .dizeres,
+.kids-play .dizeres,
+.eletronico .dizeres{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.conteudo-categoria-brinquedao .card {
+  background: #fff;
+  height: auto;
+  max-height: 500px;
+  margin-bottom: 20px; }
+  .conteudo-categoria-brinquedao .card:hover {
+    box-shadow: 10px 10px 10px 5px #888; }
+  .conteudo-categoria-brinquedao .card img {
+    height: auto;
+    max-height: 350px !important; }
+  .conteudo-categoria-brinquedao .card .card-body {
+    display: flex;
+    justify-content: center; }
+    .conteudo-categoria-brinquedao .card .card-body h3 {
+      bottom: 0;
+      position: absolute;
+      padding-bottom: 10px; }
+
+
+.conteudo-categoria-kids .card {
+  background: #fff;
+  height: auto;
+  max-height: 500px;
+  margin-bottom: 20px; }
+  .conteudo-categoria-kids .card:hover {
+    box-shadow: 10px 10px 10px 5px #888; }
+  .conteudo-categoria-kids .card img {
+    height: auto;
+    max-height: 350px !important; }
+  .conteudo-categoria-kids .card .card-body {
+    display: flex;
+    justify-content: center; }
+    .conteudo-categoria-kids .card .card-body h3 {
+      bottom: 0;
+      position: absolute;
+      padding-bottom: 10px; }
+
+.conteudo-categoria-eletronicos .card {
+  background: #fff;
+  height: auto;
+  max-height: 500px;
+  margin-bottom: 20px; }
+  .conteudo-categoria-eletronicos .card:hover {
+    box-shadow: 10px 10px 10px 5px #888; }
+  .conteudo-categoria-eletronicos .card img {
+    height: auto;
+    max-height: 350px !important; }
+  .conteudo-categoria-eletronicos .card .card-body {
+    display: flex;
+    justify-content: center; }
+    .conteudo-categoria-eletronicos .card .card-body h3 {
+      bottom: 0;
+      position: absolute;
+      padding-bottom: 10px; }
+
+.brinquedao .carousel-inner img {
+  max-height: 366px; }
+
+/*KIDS PLAY*/
+.kids-play .carousel img {
+  max-height: 312px; }
+
+/*ELETRONICOS*/
+.eletronico .carousel {
+  justify-content: center;
+  display: flex; }
+  .eletronico .carousel .carousel-item img {
+    max-height: 312px; }
+
+/*COMO TRABALHAMOS
+.alguns-produtos .card {
+  background: #F9f9fa;
+  height: 470px;
+  max-height: 500px;
+  margin-bottom: 20px; }
+
+.alguns-produtos .card:hover {
+  box-shadow: 10px 10px 10px 5px #888; }
+
+.alguns-produtos .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.alguns-produtos .card-body h3 {
+  bottom: 0;
+  position: absolute;
+  padding-bottom: 10px; }
+
+.alguns-produtos .card img {
+  height: auto;
+  max-height: 350px !important; }
+
+.como-trabalhamos h4 {
+  transform: none; }
+*/
+.paginacao{
+  justify-content: center;
+  display: flex;
+  margin-top: 30px;
+}
+.paginacao a{
+  padding: 5px 10px;
+  margin: 0 10px;
+  border: 1px solid gray;
+}
+.paginacao span{
+  background: blue;
+  padding: 5px 10px;
+  margin: 0 10px;
+  border: 1px solid gray;
+  color: #fff;
+}
+/*SINGLE*/
+.single {
+  background: #fff;
+  padding-right: 30px;
+  padding-bottom: 30px; }
+.single h3{
+  padding: 40px 0 ;
+}
+.single .descricao {
+  background: #fff; }
+
+.single p.codigo {
+  color: red; }
+.cont-mais-recentes{
+  padding: 0!important;
+  justify-content: center;
+  display: flex;
+  background: #fff;
+  margin-bottom: 30px;
+}
+.cont-mais-recentes .conteudo-mais-recentes{
+  background: #fff;
+} 
+.cont-mais-recentes .conteudo-mais-recentes .maisrecentes{  
+  padding: 20px;
+}
+.cont-mais-recentes .conteudo-mais-recentes .maisrecentes h4{
+  margin: 0;
+}
+.cont-mais-recentes .conteudo-mais-recentes .card-group{
+  justify-content: center;
+}
+.cont-mais-recentes .conteudo-mais-recentes .card-group .card{
+  width: 200px!important;
+  margin: 10px;
+}
+.cont-mais-recentes .conteudo-mais-recentes .card-group .card .card-text{
+  background: #f2f2f2;
+}
+.cont-mais-recentes .conteudo-mais-recentes .card-group .card .card-text h6{
+  margin: 0;
+  padding: 20px 0;
+}
+/*PAGINA DE BUSCA*/
+.resultado-busca .card {
+  background: #F9f9fa;
+  height: 470px;
+  max-height: 500px;
+  margin-bottom: 20px; }
+
+.resultado-busca .card:hover {
+  box-shadow: 10px 10px 10px 5px #888; }
+
+.resultado-busca .card-body {
+  display: flex;
+  justify-content: center; }
+
+.resultado-busca .card-body h3 {
+  bottom: 0;
+  position: absolute;
+  padding-bottom: 10px; }
+
+.resultado-busca .card img {
+  height: auto;
+  max-height: 350px !important; }
+
+/*CLIENTES*/
+.depoimento-cliente {
+  justify-content: center;
+  display: flex; }
+
+.depoimento-cliente .card {
+  margin-right: 10px;
+  background: #f2f2f2; }
+
+.img-depoimento {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  padding-left: 5px; }
+
+/*AREAS ATENDIDAS*/
+.gallery-container {
+  background-color: #fff;
+  color: #35373a;
+  min-height: 100vh;
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06); }
+
+/*******************CONHECANOS*/
+.missao-visao-valores {
+  padding-bottom: 10px; }
+
+.missao-visao-valores .card {
+  background: #Fff; }
+
+.missao-visao-valores .card h4 {
+  padding-top: 30px; }
+
+.missao-visao-valores .card:hover {
+  transform: scale(1.06);
+  transition: 1s; }
+
+/**********CONHEÇANOS*/
+.conheca-nos .video-conhecanos {
+  width: 100%;
+  height: 340px; }
+
+/*************CONTATO
+.contato .form-contato .mapa {
+  height: 500px; }
+  .contato .form-contato .mapa iframe {
+    width: 95%;
+    height: 95%; }
+
+.form-contato {
+  background: #FAF0E6;
+  margin-bottom: 30px; }
+*/
+
+
+.gallery-container h1 {
+  text-align: center;
+  margin-top: 70px;
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: bold; }
+
+#baguetteBox-overlay .full-image img {
+  max-height: 85% !important; }
+
+.gallery-container p.page-description {
+  text-align: center;
+  max-width: 800px;
+  margin: 25px auto;
+  color: #888;
+  font-size: 18px; }
+
+.tz-gallery {
+  padding: 40px; }
+  .tz-gallery .lightbox img {
+    width: 100%;
+    margin-bottom: 30px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 4px; }
+    .tz-gallery .lightbox img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); }
+
+.baguetteBox-button {
+  background-color: transparent !important; }
+
+  /*******************contato*/
+  .contato2{
+    background: url(../img/backcontato.jpg);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+  }
+  .contato2 .formulario-contato{
+    display: grid;
+    justify-content: center;
+    padding: 30px 0;
+  }
+  .contato2 .formulario-contato input,
+  .contato2 .formulario-contato textarea{
+    width: 400px;
+    border: none;
+  }
+  .contato2 .formulario-contato label{
+    color: #fff;
+    font-weight: bold;
+  }
+  .contato2 .formulario-contato h3{
+    color: #fff;
+  }
+  .contato2 .formulario-contato .wpcf7-form-control.wpcf7-submit{
+    padding: 5px 20px;
+    color: #000;
+    font-weight: bold;
+  }
+  .conhecanos2 iframe{
+    width: 100%;
+    height: 400px;
+  }
+/********************** fim contato*/
+/*celular media*/
+
+/*992 para baixo*/
+@media (max-width: 992px) {
+  .nossos-produtos .card-body{
+    text-align: center;
+  }
+  header .logo-img{
+    justify-content: center;
+    text-align: center;
+  }
+  .coluna-busca{
+    justify-content: center!important;
+    padding: 10px;
+  }
+  
+  .nossos-produtos .card-group .card-item{
+  margin: 0;
+  }
+  .areas-atendidas{
+    padding: 20px 0 20px 0;
+  }
+
+}
+@media (min-width: 992px) {
+    .navbar-brand {
+      display: none !important; } 
+  }
+
+@media (min-width: 767px) and (max-width: 992px) {
+  .carousel .carousel-inner .carousel-item img{
+    height: 400px;
+  }
+  .fazemos{
+    top: 10px;
+    left: 10px;
+  }
+  .nossos-produtos .card img{
+    height: 150px;
+  }
+
+
+}
+@media (min-width: 541px) and (max-width: 766px) {
+.carousel .carousel-inner .carousel-item img{
+    height: 350px;
+  }
+  .fazemos{
+    top: 10px;
+    left: 10px;
+  }
+
+}
+@media (min-width: 410px) and (max-width: 540px) {
+.carousel .carousel-inner .carousel-item img{
+    height: 300px;
+  }
+  .fazemos{
+    top: 15px;
+    left: 20px;
+  }
+  .fazemos h2{
+    font-size: 22px;
+  }
+
+}
+@media (min-width: 350px) and (max-width: 409px) {
+.carousel .carousel-inner .carousel-item img{
+    height: 250px;
+  }
+  .fazemos{
+    top: 10px;
+    left: 15px;
+  }
+  .fazemos h2{
+    padding: 10px;
+    font-size: 25px;
+  }
+  .nossos-produtos .card-item{
+    padding-top: 10px !important;
+  }
+  .areas-atendidas{
+    padding: 20px 0 20px 0;
+  }
+  footer .institucional input#email{
+    width: 250px;
+  }
+}
+
+
+@media (min-width: 355px) and (max-width: 768px) {
+  h1, h2, h3, h4, h5 {
+    transform: none; }
+
+  header .coluna-busca .linha-telefone .numero-telefone {
+    padding-right: 0; }
+
+  footer .numero-telefone {
+    padding-left: 0px; }
+
+  .logo img {
+    width: 80%;
+    padding-top: 8px; }
+    .logo img .numero-telefone {
+      text-align: center; }
+
+  .telefone {
+    justify-content: center !important; }
+    .telefone .numero-telefone h5 {
+      margin-bottom: 5px; }
+
+  .coluna-busca {
+    padding-bottom: 0 !important; }
+    .coluna-busca .btn {
+      padding-bottom: 0 !important; }
+
+  .coluna-busca h5.cent-atendimento, .coluna-busca .icone-telefone {
+    display: none; }
+
+  .contato img {
+    width: 80%; }
+
+  .contato h5.central-telefone, .icone-telefone {
+    display: none; }
+
+  .linha-telefone {
+    justify-content: center; } }
+
+
+@media (max-width: 768px) {
+  body {
+    padding: 0; }
+
+  .container.gallery-container {
+    border-radius: 0; } 
+
+.nossos-produtos .card img{
+  height: 150px;
+  }
+  .areas-atendidas .card-group .card{
+    margin-top: 30px;
+  }
+
+}
+@media (max-width: 540px) {
+  .areas-atendidas{
+    margin-top: -110px;
+  }
+  .areas-atendidas .titulo .h3_titulo{
+    margin: 120px 0px 0px 0px;
+    text-align: center;
+  }
+
+
+}
+ @media (max-width: 390px) {
+  h1, h2, h3, h4, h5 {
+  transform: none; }
+  .contato2 .formulario-contato{
+    text-align: center;
+  } 
+  .contato2 .formulario-contato input,
+  .contato2 .formulario-contato textarea{
+    width: 300px;
+  }
+}   
+
+@media (pointer: coarse) and (hover: none) {
+  .video {
+    background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black no-repeat center center scroll; }
+
+  .video video {
+    display: none; } }
+
+
+
+
+/*# sourceMappingURL=style.css.map */
