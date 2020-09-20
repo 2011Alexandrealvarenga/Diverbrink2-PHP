@@ -1,5 +1,5 @@
 <?php 
-
+include 'include/head.php';
 include 'include/header.php';
  ?>
 <!-- banner -->
@@ -235,4 +235,3 @@ include 'include/header.php';
 </div>
 
 
-<?php get_footer(); ?>
