@@ -1,4 +1,6 @@
 <?php 
+
+include 'include/header.php';
  ?>
 <!-- banner -->
   <div class="container">
