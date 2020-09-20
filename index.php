@@ -1,5 +1,5 @@
-<?php /* Template name: index*/ ?>
-<?php get_header(); ?>
+<?php 
+ ?>
 <!-- banner -->
   <div class="container">
     <div class="row">
@@ -34,11 +34,6 @@
                    
                   </div>
                 </div>
-
-              <?php endwhile; endif; ?>
-
-              <?php wp_reset_query(); ?>
-            
             </div>
 
             <a class="carousel-control-prev" href="#carouselBSWP" role="button" data-slide="prev">
