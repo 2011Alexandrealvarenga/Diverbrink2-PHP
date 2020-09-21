@@ -233,5 +233,4 @@ include 'include/header.php';
   
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.3155207154205!2d-46.65066958528601!3d-23.48514218472085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef7a2e83add13%3A0x6fe1aacf7929d021!2sDiver%20Brink!5e0!3m2!1spt-BR!2sbr!4v1596306819925!5m2!1spt-BR!2sbr"frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </div>
-
-
+<?php include 'include/footer.php'; ?>
